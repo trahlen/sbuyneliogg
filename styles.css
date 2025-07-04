@@ -1,0 +1,140 @@
+body {
+  background: #ffffff;
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+.container {
+  background: #ffffff;
+  border: 2px solid #000000;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.title {
+  font-size: 2.5em;
+  color: #0000ff;
+  text-shadow: none;
+  animation: none;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.marquee {
+  background: #000000;
+  color: #00ff00;
+  padding: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 1.2em;
+  margin: 20px 0;
+  border: 2px solid #000000;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee span {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.counter {
+  background: #000000;
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  font-size: 1.5em;
+  padding: 15px;
+  border: 2px solid #000000;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.button {
+  background: #c0c0c0;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background: #808080;
+  color: #ffffff;
+}
+
+.guestbook {
+  background: #f0f0f0;
+  border: 2px solid #000000;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.construction {
+  background: #ffff00;
+  border: 2px solid #000000;
+  padding: 15px;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.stars {
+  display: none;
+}
+
+.cursor {
+  animation: cursor-blink 1s infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.guestbook input,
+.guestbook textarea {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #000000;
+  font-family: "Times New Roman", serif;
+}
+
+.guestbook textarea {
+  width: 300px;
+  height: 100px;
+  resize: vertical;
+}
+
+.guestbook-entry {
+  background: #f0f0f0;
+  border: 1px solid #000000;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+* {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+} 

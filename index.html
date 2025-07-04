@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Meine Seite</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>say gex/h1>
-  <p>gex</p>
+  <div class="container">
+    <h1 class="title">🌟 WELCOME SBUY WEBSITE 🌟</h1>
+    
+    <div class="marquee">
+      <span>🎉 WELCOME TO THE FUTURE OF THE INTERNET! 🎉 BEST VIEWED WITH NETSCAPE NAVIGATOR! 🎉 UNDER CONSTRUCTION! 🎉</span>
+    </div>
+
+    <p style="font-size: 1.5em; color: #0000ff;">
+      <span class="blink">Hi there, Internet Explorer!</span> 
+      <span class="cursor">|</span>
+    </p>
+
+    <p style="font-size: 1.2em; color: #000000;">
+      Thanks for visiting my totally awesome website! 
+      <br>This page is best viewed at 800x600 resolution.
+    </p>
+
+    <div class="counter">
+      <strong>VISITORS:</strong> <span id="visitorCount">000001</span>
+    </div>
+
+    <div class="construction">
+      🚧 UNDER CONSTRUCTION 🚧
+      <br>More cool stuff coming soon!
+    </div>
+
+    <div class="guestbook">
+      <h3>📝 Sign My Guestbook!</h3>
+      <input type="text" id="guestName" placeholder="Your name">
+      <textarea id="guestMessage" placeholder="Leave a message!"></textarea>
+      <br>
+      <button class="button" onclick="signGuestbook()">Sign Guestbook!</button>
+    </div>
+
+    <div id="guestbookEntries" style="text-align: left; margin-top: 20px;"></div>
+
+    <div style="margin-top: 30px;">
+      <a href="#" class="button" onclick="showAlert()">Click Me!</a>
+      <a href="#" class="button" onclick="changeBackground()">Change Colors!</a>
+    </div>
+
+    <div style="margin-top: 30px; font-size: 0.9em; color: #666;">
+      <p>Best viewed with: Netscape Navigator 4.0+ or Internet Explorer 5.0+</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
